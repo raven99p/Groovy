@@ -7,3 +7,5 @@ println 'Table: employee, Database: emp'
 sql.eachRow('select * from employee') { row ->
     println " $row.id ${row.name.padRight(10)} ($row.date_of_birth)"
 }
+
+sql.close()
